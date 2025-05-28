@@ -9,7 +9,16 @@ from django.contrib.auth.decorators import login_required
 # All views functions.
 def signup_view(request):
     """
-    The view for when a user wishes to sign up.
+    Handles user registration.
+
+    Parameters:
+        request (HttpRequest): The HTTP request object.
+
+    Returns:
+        HttpResponse: The rendered signup page or a redirect after successful signup.
+
+    Return type:
+        HttpResponse
     """
     if request.method == 'POST':
         form = UserCreationForm(request.POST)
@@ -25,7 +34,16 @@ def signup_view(request):
 
 def login_view(request):
     """
-    The view for when users wish to login which displays the login webpage.
+    Handles user login.
+
+    Parameters:
+        request (HttpRequest): The HTTP request object.
+
+    Returns:
+        HttpResponse: The rendered login page or a redirect after successful login.
+
+    Return type:
+        HttpResponse
     """
     if request.method == 'POST':
         form = AuthenticationForm(request, data=request.POST)
@@ -40,7 +58,16 @@ def login_view(request):
 
 def logout_view(request):
     """
-    The view for the logout page which allows users to logout.
+    Handles user logout.
+
+    Parameters:
+        request (HttpRequest): The HTTP request object.
+
+    Returns:
+        HttpResponse: The rendered logout page or a redirect after logout.
+
+    Return type:
+        HttpResponse
     """
     if request.method == 'POST':
         logout(request)
@@ -50,14 +77,32 @@ def logout_view(request):
 
 def home(request):
     """
-    The view for the home page which displays the home web page.
+    Renders the home page.
+
+    Parameters:
+        request (HttpRequest): The HTTP request object.
+
+    Returns:
+        HttpResponse: The rendered home page.
+
+    Return type:
+        HttpResponse
     """
     return render(request, 'main/home.html')
 
 
 def project_list(request):
     """
-    The view for the project list page which lists all projects from db. 
+    Displays a list of all projects.
+
+    Parameters:
+        request (HttpRequest): The HTTP request object.
+
+    Returns:
+        HttpResponse: The rendered project list page.
+
+    Return type:
+        HttpResponse
     """
     projects = Project.objects.all()
     return render(request, 'main/project_list.html', {'projects': projects})
@@ -66,8 +111,17 @@ def project_list(request):
 @login_required
 def project_detail(request, project_id):
     """
-    The view for when the link for a project in each project is clicked to display
-    the project details webpage for that respective project.
+    Displays details for a specific project.
+
+    Parameters:
+        request (HttpRequest): The HTTP request object.
+        project_id (int): The ID of the project.
+
+    Returns:
+        HttpResponse: The rendered project detail page.
+
+    Return type:
+        HttpResponse
     """
     project = get_object_or_404(Project, id=project_id)
     return render(request, 'main/project_detail.html', {'project': project})
