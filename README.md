@@ -44,6 +44,23 @@ This is a Django-based web application it has
 
 ---
 
+## Running with Docker
+
+1. **Build the Docker image**
+   ```bash
+   docker build -t jt1374/scieng_website:latest .
+   ```
+
+2. **Run the Docker container**
+   ```bash
+   docker run -p 80:80 jt1374/scieng_website:latest
+   ```
+
+3. **Access the app**
+   Open your browser and go to [http://localhost:80](http://localhost:80)
+
+---
+
 ## Notes
 
 - **Do not commit secrets** (such as passwords or API keys) to public repositories.
