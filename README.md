@@ -1,46 +1,65 @@
-# SciEng Website
+# Scieng Website
 
-This is a Django-based web application it has
+`SciEng Website` is a Django web app for a science and engineering organization. It allows the site owners to showcase projects, provides user authentication and allows the users to view the news on projects announced. Similar to a blog web app.
 
 ---
 
-## Local Development Setup (venv)
+## Table of Contents
 
-1. **Clone the repository**
+1. [Features](#features)
+2. [How to Install](#how-to-install)
+3. [Usage](#usage)
+4. [License](#license)
+5. [Contact](#contact)
+6. [Images](#images)
+7. [Screenshots of Project](#screenshots-of-project)
+8. [Credits](#credits)
+
+---
+
+## Features!
+
+- **Home Page**: Introduces the organization.
+- **Projects**: Displays a list of projects with details and has images to showcase 
+                the projects.
+- **User Authentication**: Allows users to sign up, log in, and log out.
+- **Responsive Design**: Works on both desktop and mobile devices.
+
+---
+
+## How to Install?
+
+1. **Clone the Project**:
    ```bash
-   git clone <your-repo-url>
-   cd 06-031-Capstone-Project-Consolidation
+   git clone https://github.com/JT1374/Scieng_website.git
+   cd Scieng_website
    ```
 
-2. **Create and activate a virtual environment**
-   - **Windows:**
-     ```bash
-     python -m venv venv
-     venv\Scripts\activate
-     ```
-   - **Mac/Linux:**
-     ```bash
-     python3 -m venv venv
-     source venv/bin/activate
-     ```
+2. **Set Up a Virtual Environment**:
+   ```bash
+   python -m venv venv
+   venv\Scripts\activate  # For Windows
+   source venv/bin/activate  # For Unix-based systems
+   ```
 
-3. **Install dependencies**
+3. **Install Dependencies**:
    ```bash
    pip install -r requirements.txt
    ```
 
-4. **Apply migrations**
+4. **Set Up the Database**:
    ```bash
-   python scieng_website/manage.py migrate
+   cd scieng_website
+   python manage.py migrate
    ```
 
-5. **Run the development server**
+5. **Run the App**:
    ```bash
-   python scieng_website/manage.py runserver
+   python manage.py runserver
    ```
 
-6. **Access the app**
-   Open your browser and go to [http://localhost:8000](http://localhost:8000)
+6. **Open in Your Browser**:
+   Visit [http://127.0.0.1:8000/](http://127.0.0.1:8000/).
 
 ---
 
@@ -61,15 +80,51 @@ This is a Django-based web application it has
 
 ---
 
-## Notes
 
-- **Do not commit secrets** (such as passwords or API keys) to public repositories.
-- If your project requires secrets, create a `.env` file or use environment variables. Document how to set these up here if needed.
-- For production, set `DEBUG = False` and update `ALLOWED_HOSTS` in `scieng_website/scieng_website/settings.py`.
+## Usage
+
+1. Navigate to the home page to learn about the organization.
+2. Explore the **Projects** section to view detailed project information.
+3. Use the **Sign Up** or **Log In** options to create an account or access additional features.
+
+### Screenshots
+
+<p text-align="center">
+   <img src="screenshots3/Screenshot 1.png" width="400px" height="400px" alt="image of project"/>
+   <img src="screenshots3/Screenshot 2.png" width="400px" height="400px" alt="image of project"/>
+   <img src="screenshots3/Screenshot 3.png" width="400px" height="400px" alt="image of project"/>
+   <img src="screenshots3/Screenshot 4.png" width="400px" height="400px" alt="image of project"/>
+   <img src="screenshots3/Screenshot 5.png" width="400px" height="400px" alt="image of project"/>
+   <img src="screenshots3/Screenshot 6.png" width="400px" height="400px" alt="image of project"/>
+</p>
 
 ---
 
-## Documentation
+## Documentation From Sphinx
 
-- Project documentation can be found in the `docs/` directory.
+- Project documentation can be found in the `docs` directory.
 - It was made using sphinx.
+
+---
+
+## License
+
+Has no licence.
+
+---
+
+## Contact
+
+Questions or feedback? Email me at [barnesjulian368@gmail.com].
+
+---
+
+## Images
+
+The images in this project are not mine and are for placeholder purposes only.
+
+---
+
+## Credits
+
+This project was created by Julian Barnes.
