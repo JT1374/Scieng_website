@@ -67,7 +67,7 @@
 
 1. **Build the Docker image**
    ```bash
-   docker build -t jt1374/scieng_website:latest .
+   docker build -t jt1374/scieng_website .
    ```
 
 2. **Run the Docker container**
@@ -86,6 +86,7 @@
 1. Navigate to the home page to learn about the organization.
 2. Explore the **Projects** section to view detailed project information.
 3. Use the **Sign Up** or **Log In** options to create an account or access additional features.
+4. Create a super user to access admin in order to edit admin posts.
 
 ### Screenshots
 
