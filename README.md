@@ -65,7 +65,12 @@
 
 ## Running with Docker
 
-1. **Build the Docker image**
+2. **Make sure you have Docker Desktop installed first!**
+   ```bash
+   Install docker desktop.
+   ```
+
+2. **Build the Docker image**
    ```bash
    docker build -t jt1374/scieng_website .
    ```
@@ -86,7 +91,7 @@
 1. Navigate to the home page to learn about the organization.
 2. Explore the **Projects** section to view detailed project information.
 3. Use the **Sign Up** or **Log In** options to create an account or access additional features.
-4. Create a super user to access admin in order to edit admin posts.
+4. Create a **Super User** to access admin in order to edit admin posts.
 
 ### Screenshots
 

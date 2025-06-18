@@ -1,13 +1,13 @@
 # Using the official Python image as a base image.
 FROM python:3.11-slim
 
-# Sets the working directory in the container.
+# Sets the working directory.
 WORKDIR /app
 
 # Copies files from the current directory to the container's main directory.
 COPY . /app
 
-# Upgrade pip and install dependencies.
+# Upgrades pip and install dependencies.
 RUN pip install --upgrade pip
 RUN pip install --no-cache-dir -r requirements.txt
 
