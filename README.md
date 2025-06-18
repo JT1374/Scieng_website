@@ -8,12 +8,14 @@
 
 1. [Features](#features)
 2. [How to Install](#how-to-install)
-3. [Usage](#usage)
-4. [License](#license)
-5. [Contact](#contact)
-6. [Images](#images)
-7. [Screenshots of Project](#screenshots-of-project)
-8. [Credits](#credits)
+3. [Running with Docker](#running-with-docker)
+4. [Usage](#usage)
+5. [Screenshots of Project](#screenshots-of-project)
+6. [Documentation from Sphinx](#documentation-from-sphinx)
+7. [License](#license)
+8. [Contact](#contact)
+9. [Images](#images)
+10. [Credits](#credits)
 
 ---
 
@@ -92,7 +94,6 @@
 
 ---
 
-
 ## Usage
 
 1. Navigate to the home page to learn about the organization.
@@ -115,8 +116,8 @@
 
 ## Documentation From Sphinx
 
-- Project documentation can be found in the `docs` directory.
-- It was made using sphinx.
+- Project documentation can be found in the `docs` directory by the file called index.
+- It was made using sphinx with the rtd theme.
 
 ---
 
