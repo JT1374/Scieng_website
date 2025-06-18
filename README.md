@@ -53,21 +53,28 @@
    python manage.py migrate
    ```
 
-5. **Run the App**:
+5. **Create Super User**:
+   ```bash
+   workon my_django
+   python manage.py createsuperuser
+   ```
+
+6. **Run the App**:
    ```bash
    python manage.py runserver
    ```
 
-6. **Open in Your Browser**:
+7. **Open in Your Browser**:
    Visit [http://127.0.0.1:8000/](http://127.0.0.1:8000/).
 
 ---
 
 ## Running with Docker
 
-2. **Make sure you have Docker Desktop installed first!**
+1. **Make sure you have Docker Desktop installed first!**
    ```bash
    Install docker desktop.
+   Run it.
    ```
 
 2. **Build the Docker image**
@@ -75,12 +82,12 @@
    docker build -t jt1374/scieng_website .
    ```
 
-2. **Run the Docker container**
+3. **Run the Docker container**
    ```bash
    docker run -p 80:80 jt1374/scieng_website:latest
    ```
 
-3. **Access the app**
+4. **Access the app**
    Open your browser and go to [http://localhost:80](http://localhost:80)
 
 ---
